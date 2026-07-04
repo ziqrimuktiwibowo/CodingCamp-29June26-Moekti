@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <button id="theme-toggle">Ganti Tema</button>
+
+    <div class="dashboard">
+        <!-- GREETING & CLOCK -->
+        <header>
+            <h1 id="clock-display">00:00:00</h1>
+            <p id="date-display">Tanggal</p>
+            <h2 id="greeting-text">
+                <span id="greeting-time">Good Morning</span>, 
+                <span id="user-name" contenteditable="true" title="Klik untuk ubah nama">User</span>!
+            </h2>
+        </header>
+
+        <!-- FOCUS TIMER -->
+        <section class="card">
+            <h3>Focus Timer (25 Min)</h3>
+            <div id="timer-display">25:00</div>
+            <div class="btn-group">
+                <button id="btn-start">Start</button>
+                <button id="btn-stop">Stop</button>
+                <button id="btn-reset">Reset</button>
+            </div>
+        </section>
+
+        <!-- TO-DO LIST -->
+        <section class="card">
+            <h3>To-Do List</h3>
+            <div class="input-group">
+                <input type="text" id="task-input" placeholder="">
+                <button id="btn-add-task">Add</button>
+            </div>
+            <ul id="task-list"></ul>
+        </section>
+
+        <!-- QUICK LINKS -->
+        <section class="card">
+            <h3>Quick Links</h3>
+            <div class="input-group">
+                <input type="text" id="link-name" placeholder="Nama (ex: Google)">
+                <input type="url" id="link-url" placeholder="URL (https://...)">
+                <button id="btn-add-link">Add Link</button>
+            </div>
+            <div id="quick-links-container" class="links-container"></div>
+        </section>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
